@@ -107,17 +107,25 @@
 
         <div class="container booking-area">
             <form action="" class="row">
-                <div class="col-lg mb-3 mb-lg-0">
-                    <input type="date" class="form-control" placeholder="Date">
+                <div class="col-lg mb-3 mb-lg-0 position-relative">
+                    <label for="checkin" class="form-label">Check-in Date</label>
+                    <input type="date" id="checkin" class="form-control" style="font-size: 14px; padding: 10px;">
+                    <small class="text-muted">Format: dd-mm-yyyy</small>
+                </div>
+
+                <!-- Check-out Date -->
+                <div class="col-lg mb-3 mb-lg-0 position-relative">
+                    <label for="checkin" class="form-label">Check-Out Date</label>
+                    <input type="date" id="checkin" class="form-control" style="font-size: 14px; padding: 10px;">
+                    <small class="text-muted">Format: dd-mm-yyyy</small>
                 </div>
                 <div class="col-lg mb-3 mb-lg-0">
-                    <input type="date" class="form-control" placeholder="Date">
-                </div>
-                <div class="col-lg mb-3 mb-lg-0">
+                    <label for="checkin" class="form-label">Select Adult</label>
                     <select class="form-select">
                         <option selected>Adults</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
+                        <option value="3">3</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
@@ -125,6 +133,9 @@
                     </select>
                 </div>
                 <div class="col-lg mb-3 mb-lg-0">
+                    <label for="checkin" class="form-label">Select
+                        child
+                    </label>
                     <select class="form-select">
                         <option selected>Children</option>
                         <option value="1">1</option>
@@ -135,8 +146,8 @@
                         <option value="6">6</option>
                     </select>
                 </div>
-                <div class="col-lg mb-0 lg-0">
-                    <button type="submit" class="main-btn rounded-2 px-lg-3">Check Availability</button>
+                <div class="col-lg mb-3 lg-0">
+                    <button type="submit" class="main-btn rounded-2 px-lg-3 mt-4">Check Availability</button>
                 </div>
             </form>
         </div>
